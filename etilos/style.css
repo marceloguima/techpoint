@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* variáveis */
+:root {
+    --color-primary: #000000;
+    --cor-hoover: #fffdfd;
+    --color-primary-texto: #ffffff;
+    --color-secundary-dark: #205091;
+}
+
+.container {
+    background-color: #dddcdc;
+    height: 100vh;
+}
+
+.logo {
+    color: var(--color-primary-texto);
+}
+
+.navbar {
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.navbar:hover {
+    background-color: var(--cor-hoover);
+}
+.navbar:hover a {
+    background-color: var(--cor-hoover);
+    color: var(--color-primary);
+}
+
+.links-nav {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    /* background-color: #161616; */
+}
+
+.links-nav li,
+a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--color-primary-texto);
+    font-weight: 600;
+}
+
+.nav-icons {
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* fim nav */
+
+/* hero */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+    background-image: url(../images/fone-rosa-fundo-escuro.jpg);
+    /* background-size: cover; */
+    background-position: center;
+    padding: 10px 20px;
+}
+
+.hero-content {
+    display: flex;
+    height: 50vh;
+    /* margin-top: 80px; */
+    color: #fff;
+}
+
+.texto-hero {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    
+}
+
+.texto-direito{
+ display: flex;
+ text-align: center;
+ align-items: center;
+    width: 30vw;
+    height: 100%;
+}
+
+.texto-direito h2 {
+    font-size: 5vw;
+    
+    
+  
+}
+
+.texto-esquerdo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    color: #fff;
+    text-align: center;
+    gap: 60px;
+
+}
+
+.texto-esquerdo h1 {
+   font-size: 3vw;
+  
+}
+
+.texto-esquerdo p {
+    font-size: 2vw;
+    font-weight: 500;
+    text-align: center;
+}
+
+.texto-esquerdo a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2vw;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+    max-width: 300px;
+}
+
+.texto-direito a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.texto-esquerdo {
+    width: 25%;
+    height: 100%;
+
+}
+
+.texto-esquerdo h2{
+    font-size: 6vw;
+    font-weight: 600;
+    text-align: center;
+}
+
+.destaques {
+    padding: 20px;
+}
+
+.cards-destaques {
+    /* background-color: #77aff3; */
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* para esconder a bara de rolagem */
+.cards-destaques::-webkit-scrollbar {
+    display: none;
+}
+
+.itens-destaques {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 100%;
+    gap: 10%;
+   
+}
+
+
+
+img {
+    width: 10vw;
+    border-radius: 80px;
+}
+
+.card {
+    width:10vw;
+    text-align: center;
+}
+/* 
+@media (max-width: 762px) {
+    .itens-destaques{
+        display: grid;
+        gap: 1.3rem;
+      grid-template-columns: 1fr 1fr 1fr;
+     }
+} */
