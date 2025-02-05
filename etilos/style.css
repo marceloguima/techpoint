@@ -8,7 +8,7 @@
 
 /* variáveis */
 :root {
-    --color-primary: #e00000;
+    --color-primary: #000;
     --cor-hoover: #cbe2ff00;
     --color-primary-texto: #ffffff;
     --color-secundary-dark: #205091;
@@ -21,7 +21,7 @@
 
 .navbar {
     height: 80px;
-    background-color: var(--color-primary);
+    /* background-color: var(--color-primary); */
     /* border-bottom: solid 1px var(--color-primary-texto); */
     display: flex;
     justify-content: space-between;
@@ -86,11 +86,7 @@
     cursor: pointer;
     border-radius: 10px;
 }
-/* 
-.btn:hover {
-border: solid 1px var(--color-primary);
-border-radius: 10px;
-} */
+
 
 .links-nav {
     display: flex;
@@ -107,15 +103,31 @@ a {
     font-size: 1.2rem;
     font-weight: 600;
 }
+.links-nav a:hover {
+    border-bottom: 2px solid var(--color-primary-texto);
+}
 
 .nav-icons {
     width: 10%;
+    height: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     gap: 10px;
 }
 .nav-icons a {
     font-size: 2rem;
+}
+
+.contando{
+    display: flex;
+    gap: 1px;
+}
+
+.conta-carrinho{
+   font-size: 1.2rem;
+   margin-top: -10px;
+  
 }
 
 /* fim nav */
@@ -143,51 +155,57 @@ a {
 .texto-hero {
     width: 100%;
     height: 100%;
+    margin-left: 20px;
     display: flex;
     /* flex-direction: column; */
     justify-content: space-between;
     align-items: end;
+    padding: 10px;
 }
 
 .texto-direito {
     display: flex;
     text-align: center;
-    align-items: center;
-    align-items: end;
+    align-items: start;
     width: 30vw;
-    height: 60%;
+    height: 80%;
 }
 
-.texto-direito h2 {
-    font-size: 5vw;
-}
 
 .texto-esquerdo {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     /* align-items: center; */
     color: #fff;
-    text-align: center;
-    gap: 60px;
+    gap: 80px;
+   
 }
 
-.texto-esquerdo h1 {
-    font-size: 3vw;
+.texto-esquerdo h2 {
+    font-size: 2rem;
 }
 
-.texto-esquerdo p {
-    font-size: 2vw;
+.btn-cta:hover{
+    background-color: #b95555;
+    /* color: #000; */
+
+}
+.texto-direito p {
+    font-size: 1.6rem;
     font-weight: 500;
-    text-align: center;
+    /* text-align: center; */
+  
+   
 }
 
 .texto-esquerdo a {
     text-decoration: none;
     color: #fff;
-    font-size: 2vw;
+    font-size: 1.3rem;
+    
     font-weight: 600;
     text-align: center;
     border: 1px solid #fff;
@@ -195,6 +213,7 @@ a {
     padding: 10px;
     margin-top: 20px;
     max-width: 300px;
+    min-width: 150px;
 }
 
 .texto-direito a:hover {
@@ -207,11 +226,7 @@ a {
     height: 100%;
 }
 
-.texto-esquerdo h2 {
-    font-size: 6vw;
-    font-weight: 600;
-    text-align: center;
-}
+/*  */
 
 .destaques {
     padding: 20px;
@@ -275,6 +290,18 @@ img {
     .links-nav a{
         font-size: 1rem;
     }
+
+    .texto-hero{
+        justify-content: center;
+        gap: 80px;
+    }
+    .texto-esquerdo{
+        gap: 30px;
+    }
+
+    .texto-esquerdo a{
+      background-color: #302f2f8e;
+    }
 }
 
 @media (max-width: 768px) {
@@ -294,7 +321,7 @@ img {
     }
 
     .nav-icons{
-        width: 10%;
+        width: 15%;
     }
 
     a i{
@@ -304,6 +331,16 @@ img {
     .content-buscar{
         width: 50%;
     }
+
+   
+    .texto-esquerdo a{
+        font-size: 1rem;
+        /* width: 150%; */
+    }
+
+    /* .texto-esquerdo h2{
+        font-size: 2rem;
+    } */
 }
 
 @media (max-width: 480px) {
@@ -343,5 +380,34 @@ img {
         height: 100%;
         align-items: center;
        
+    }
+
+    .texto-hero{
+       
+        height: 100%;
+        gap: 1px;
+    }
+    
+    .texto-esquerdo{
+       height: 40px;
+    }
+
+    .texto-esquerdo h2{
+       display: none;
+    }
+
+    .texto-esquerdo a{
+        font-size: 0.8rem;
+      
+    }
+
+    .texto-direito{
+        width: 100%;
+        height: 400px;
+        align-items: center;
+    }
+
+    .texto-direito p{
+        width: 300px;
     }
 }
