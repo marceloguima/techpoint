@@ -45,6 +45,9 @@
 
     /* Outros */
     --transition-default: all 0.3s ease;
+
+    /* sombras */
+    --sombra-suave: 0 1px 15px #777474;
 }
 
 /* ===== Início Container ===== */
@@ -256,6 +259,9 @@ a {
 .destaques {
     padding: var(--padding-large);
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .cards-destaques {
@@ -263,6 +269,7 @@ a {
     gap: var(--gap-small);
     width: 100%;
     height: 100%;
+   
 }
 
 .itens-destaques {
@@ -288,6 +295,7 @@ a {
 .novidades {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100vw;
     padding: 20px;
     gap: 20px;
@@ -314,14 +322,17 @@ h3 {
 .card-novidades {
     border-radius: 10px;
     display: flex;
+   gap: var(--gap-small);
+   padding: 0 0 20px;
     flex-direction: column;
     align-items: center;
+    background-color: var(--color-background-card);
     transition: box-shadow 0.4s ease;
     flex: 1 1 calc(16% - 20px);
 }
 
 .card-novidades:hover {
-    box-shadow: 0 1px 10px 2px #000000;
+    box-shadow: var(--sombra-suave);
 }
 
 .card-novidades img {
@@ -377,7 +388,7 @@ h3 {
 }
 
 .card-ofertas:hover {
-    box-shadow: 0 2px 10px;
+    box-shadow: var(--sombra-suave);
 }
 
 .preco-carrinho {
