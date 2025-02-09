@@ -13,7 +13,7 @@
     --color-primary: #000;
     --color-secondary: #fff;
     --color-accent: #b95555;
-    --color-hover: #cbe2ff00;
+    --color-hover: #1b1b1b83;
     --color-background: #e6e6e6;
     --color-background-card: #dddbdb;
     --color-dark-overlay: #302f2f8e;
@@ -75,6 +75,10 @@
     transition: var(--transition-default);
 }
 
+.navbar:hover {
+    background-color: var(--color-hover);
+}
+
 .content-main-nav {
     display: flex;
     justify-content: space-between;
@@ -82,10 +86,6 @@
     width: 80%;
     height: 100%;
     gap: var(--gap-medium);
-}
-
-.navbar:hover {
-    background-color: var(--color-hover);
 }
 
 .navbar:hover a {
