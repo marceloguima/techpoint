@@ -88,7 +88,6 @@
     gap: var(--gap-medium);
 }
 
-
 .logo {
     color: var(--color-secondary);
     font-size: 1.6rem;
@@ -135,7 +134,7 @@
     justify-content: space-between;
 }
 
-.links-nav, 
+.links-nav,
 a {
     list-style: none;
     text-decoration: none;
@@ -145,7 +144,8 @@ a {
     transition: var(--transition-default);
 }
 
-.links-nav .nav-icons, a:hover {
+.links-nav .nav-icons,
+a:hover {
     border-bottom: 2px solid var(--color-secondary);
 }
 
@@ -180,7 +180,7 @@ a {
     width: 100%;
     height: var(--hero-height);
     background-image: url(../images/fone-rosa-fundo-escuro.jpg);
-    background-position:center;
+    background-position: center;
     padding: var(--padding-medium);
 }
 
@@ -282,7 +282,6 @@ a {
     gap: var(--gap-small);
     width: 100vw;
     height: 100%;
-   
 }
 
 .itens-destaques {
@@ -335,8 +334,8 @@ h3 {
 .card-novidades {
     border-radius: 10px;
     display: flex;
-   gap: var(--gap-small);
-   padding: 0 0 20px;
+    gap: var(--gap-small);
+    padding: 0 0 20px;
     flex-direction: column;
     align-items: center;
     background-color: var(--color-background-card);
@@ -456,6 +455,108 @@ h3 {
     color: #f78d04;
 }
 
+footer {
+    background-color: #e0e0e0;
+    margin-top: 100px;
+    padding: 20px;
+    width: 100vw;
+}
+
+.itens-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sobre {
+    width: 180px;
+}
+.atendimento {
+    width: 230px;
+}
+
+.atendimento a {
+    color: var(--color-primary);
+    font-size: 0.8rem;
+    border: none;
+}
+
+.atendimneto a:hover {
+    border: none;
+    text-decoration: underline;
+}
+
+.sobre,
+.atendimento,
+.baixar-app {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    border: solid 1px var(--color-primary);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+.baixar-app .logo{
+    color: var(--color-primary);
+   
+} 
+
+.icons-baixar{
+    display: flex;
+    flex-direction: column;
+}
+
+.icons-baixar a, i{
+    color: var(--color-primary);
+    border: none;
+}
+
+.icons-baixar i{
+    font-size: 2rem;
+}
+
+
+li {
+    list-style: none;
+}
+
+.sobre a {
+    color: var(--color-primary);
+    font-size: 0.8rem;
+    border: none;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+   
+}
+
+form input{
+    padding: 8px;
+    border-radius: var(--border-radius-medium);
+    border: none;
+    outline: none;
+}
+
+form input:focus{
+    border: solid 1px var(--color-accent);
+}
+
+
+form button{
+    padding: 8px;
+    background-color: var(--color-accent);
+    border-radius: var(--border-radius-medium);
+    border: none;
+  
+}
+
 /* ===== Início Media Queries ===== */
 
 @media (min-width: 996px) {
@@ -465,7 +566,6 @@ h3 {
 }
 
 @media (max-width: 1200px) {
-
     .card-ofertas {
         flex: 1 1 calc(25% - 20px);
     }
@@ -515,8 +615,6 @@ h3 {
         width: 200px;
     }
 
-    
-
     .card-novidades {
         flex: 1 1 calc(33.33% - 20px);
     }
@@ -524,7 +622,14 @@ h3 {
     .card-ofertas {
         flex: 1 1 calc(33.33% - 20px);
     }
+
+   .itens-footer{
+    flex: 1 1 calc(50% - 20px);
+       
+       
+    }
 }
+
 
 @media (max-width: 768px) {
     .navbar {
@@ -548,7 +653,7 @@ h3 {
         font-size: var(--font-size-small);
     }
 
-    .texto-direito p{
+    .texto-direito p {
         font-size: 1.3rem;
     }
 }
@@ -575,16 +680,12 @@ h3 {
     }
 
     .nav-icons {
-       
-       
         gap: 10px;
-
     }
 
     .texto-hero {
         height: 100%;
         gap: var(--gap-small);
-       
     }
 
     .texto-esquerdo {
@@ -592,7 +693,7 @@ h3 {
     }
 
     .texto-esquerdo h2 {
-       font-size: 1.6rem;
+        font-size: 1.6rem;
     }
 
     .texto-esquerdo a {
@@ -605,8 +706,6 @@ h3 {
         align-items: center;
     }
 
-   
-
     .card-novidades {
         flex: 1 1 calc(33.33% - 20px);
     }
@@ -614,10 +713,10 @@ h3 {
     .card-ofertas {
         width: 25%;
         flex: 1 1 calc(50% - 20px);
-       
     }
 
-    .card-ofertas .preco, .cart-button{
+    .card-ofertas .preco,
+    .cart-button {
         font-size: 1.3rem;
         width: 20%;
     }
