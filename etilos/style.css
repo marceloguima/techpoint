@@ -88,9 +88,6 @@
     gap: var(--gap-medium);
 }
 
-.navbar:hover a {
-    color: var(--color-secondary);
-}
 
 .logo {
     color: var(--color-secondary);
@@ -138,7 +135,7 @@
     justify-content: space-between;
 }
 
-.links-nav li,
+.links-nav, 
 a {
     list-style: none;
     text-decoration: none;
@@ -148,7 +145,7 @@ a {
     transition: var(--transition-default);
 }
 
-.links-nav a:hover {
+.links-nav .nav-icons, a:hover {
     border-bottom: 2px solid var(--color-secondary);
 }
 
@@ -183,7 +180,7 @@ a {
     width: 100%;
     height: var(--hero-height);
     background-image: url(../images/fone-rosa-fundo-escuro.jpg);
-    background-position: center;
+    background-position:center;
     padding: var(--padding-medium);
 }
 
@@ -196,7 +193,6 @@ a {
 .texto-hero {
     width: 100%;
     height: 100%;
-    margin-left: var(--gap-medium);
     display: flex;
     justify-content: space-between;
     align-items: end;
@@ -232,6 +228,10 @@ a {
     transition: var(--transition-default);
 }
 
+.texto-esquerdo a {
+    background-color: var(--color-dark-overlay);
+}
+
 .btn-cta:hover {
     background-color: var(--color-accent);
 }
@@ -262,12 +262,25 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+}
+
+.barra-de-progresso {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    background: #007bff;
+    width: 0%;
+    transition: width 0.2s;
+    z-index: 10; /* Garante que a barra fique acima do conteúdo */
 }
 
 .cards-destaques {
     display: flex;
+    overflow-x: auto;
     gap: var(--gap-small);
-    width: 100%;
+    width: 100vw;
     height: 100%;
    
 }
@@ -281,12 +294,12 @@ a {
 }
 
 .card {
-    width: 10vw;
+    min-width: 100px;
     text-align: center;
 }
 
 .card img {
-    width: 10vw;
+    width: 100%;
     border-radius: var(--border-radius-large);
 }
 /* ===== Fim Destaques ===== */
@@ -492,17 +505,16 @@ h3 {
     }
 
     .texto-hero {
-        justify-content: center;
+        /* justify-content: center; */
         gap: var(--gap-large);
     }
 
     .texto-esquerdo {
         gap: var(--gap-medium);
+        width: 200px;
     }
 
-    .texto-esquerdo a {
-        background-color: var(--color-dark-overlay);
-    }
+    
 
     .card-novidades {
         flex: 1 1 calc(33.33% - 20px);
@@ -534,6 +546,10 @@ h3 {
     .texto-esquerdo a {
         font-size: var(--font-size-small);
     }
+
+    .texto-direito p{
+        font-size: 1.3rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -541,7 +557,7 @@ h3 {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        width: 70%;
+        width: 80%;
         height: 100%;
     }
 
@@ -553,15 +569,21 @@ h3 {
 
     .navbar {
         align-items: start;
+        padding: 0 20px;
+        gap: 0;
     }
 
     .nav-icons {
-        align-items: center;
+       
+       
+        gap: 10px;
+
     }
 
     .texto-hero {
         height: 100%;
         gap: var(--gap-small);
+       
     }
 
     .texto-esquerdo {
@@ -569,7 +591,7 @@ h3 {
     }
 
     .texto-esquerdo h2 {
-        display: none;
+       font-size: 1.6rem;
     }
 
     .texto-esquerdo a {
@@ -582,10 +604,7 @@ h3 {
         align-items: center;
     }
 
-    .texto-direito p {
-        width: 300px;
-        padding: 40px;
-    }
+   
 
     .card-novidades {
         flex: 1 1 calc(33.33% - 20px);
