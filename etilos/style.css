@@ -273,7 +273,7 @@ a:hover {
     background: #007bff;
     width: 0%;
     transition: width 0.2s;
-    z-index: 10; /* Garante que a barra fique acima do conteúdo */
+    z-index: 10; 
 }
 
 .cards-destaques {
@@ -465,6 +465,8 @@ footer {
 .itens-footer {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    
 }
 
 .sobre {
@@ -508,7 +510,7 @@ footer {
     flex-direction: column;
 }
 
-.icons-baixar a, i{
+.icons-baixar  a{
     color: var(--color-primary);
     border: none;
 }
@@ -554,6 +556,8 @@ form button{
     background-color: var(--color-accent);
     border-radius: var(--border-radius-medium);
     border: none;
+    font-size: 1.2rem;
+    font-weight: 500;
   
 }
 
@@ -623,10 +627,12 @@ form button{
         flex: 1 1 calc(33.33% - 20px);
     }
 
+
    .itens-footer{
     flex: 1 1 calc(50% - 20px);
-       
-       
+    justify-content: center;
+    gap: 8px;
+   
     }
 }
 
