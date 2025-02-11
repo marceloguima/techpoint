@@ -726,5 +726,13 @@ form button{
         font-size: 1.3rem;
         width: 20%;
     }
+
+    .baixar-app, .atendimento, .sobre{
+        width: 300px;
+    }
+
+    .baixar-app .logo{
+        width: 100%;
+    }
 }
 /* ===== Fim Media Queries ===== */
