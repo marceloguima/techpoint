@@ -1,5 +1,4 @@
 TechPoint - E-commerce de Acessórios Tech
-**Link do Projeto Hospedado:** [TechPoint - Veja o site](https://teckpoint.netlify.app)🔗
 
 Descrição do Projeto
 Este projeto consiste em um e-commerce de acessórios tech estilizado e responsivo, desenvolvido utilizando HTML5, CSS3 e JavaScript. O objetivo principal é demonstrar minhas habilidades em front-end, criando uma loja virtual com um design moderno, acessível e com boa usabilidade.
@@ -45,3 +44,6 @@ Este projeto é uma oportunidade de aprofundar meus conhecimentos em estilizaç�
 
 Autor
 Marcelo Guimarães Dos Santos
+
+**Link do Projeto Hospedado:** [TechPoint - Veja o site](https://teckpoint.netlify.app)🔗
+
