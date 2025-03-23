@@ -37,10 +37,111 @@
                 <div class="nav-icons">
                     <a href="#"><i class="fa-solid fa-user"></i></a>
                     <a href="#" class="contando"
-                        ><i class="cart fa-solid fa-cart-shopping"></i>
-                        <span class="conta-carrinho">3</span></a
-                    >
+                        ><i
+                            class="cart fa-solid fa-cart-shopping"
+                            onclick="mostraCarrinho()"
+                        ></i>
+                        <p class="conta-carrinho" id="numero-carrinho"></p
+                    ></a>
                 </div>
+                <!-- carrinho de compras -->
+                <div class="modal-carrinho">
+                    <p class="msg-carrinho-vazio">Seu carrinho está vazio</p>
+                   <!-- itens do carrinho -->
+                    <!-- <div class="item-carrinho">
+                        <img src="./images/black-light.png" alt="" />
+                        <div>
+                            <h5>hing-light</h5>
+                            <p>Lorem, ipsum dolor.</p>
+                        </div>
+                        <div class="botoes-carrinho">
+                            <button>+</button>
+                            <button>-</button>
+                            <p>1</p>
+                        </div>
+                        <h5>R$0.00</h5>
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                    <div class="item-carrinho">
+                        <img src="./images/fone-detalhado.png" alt="" />
+                        <div>
+                            <h5>hing-light</h5>
+                            <p>Lorem, ipsum dolor.</p>
+                        </div>
+                        <div class="botoes-carrinho">
+                            <button>+</button>
+                            <button>-</button>
+                        </div>
+                        <h5>R$0.00</h5>
+                        <i class="fa-solid fa-trash"></i>
+
+                    </div>
+                    <div class="item-carrinho">
+                        <img src="./images/caixas.png" alt="" />
+                        <div>
+                            <h5>hing-light</h5>
+                            <p>Lorem, ipsum dolor.</p>
+                        </div>
+                        <div class="botoes-carrinho">
+                            <button>+</button>
+                            <button>-</button>
+                        </div>
+                        <h5>R$0.00</h5>
+                        <i class="fa-solid fa-trash"></i>
+
+                    </div>
+                    <div class="item-carrinho">
+                        <img src="./images/mic2 (2).png" alt="" />
+                        <div>
+                            <h5>hing-light</h5>
+                            <p>Lorem, ipsum dolor.</p>
+                        </div>
+                        <div class="botoes-carrinho">
+                            <button>+</button>
+                            <button>-</button>
+                        </div>
+                        <h5>R$0.00</h5>
+                        <i class="fa-solid fa-trash"></i>
+
+                    </div>
+                    <div class="item-carrinho">
+                        <img src="./images/monitor1.png" alt="" />
+                        <div>
+                            <h5>hing-light</h5>
+                            <p>Lorem, ipsum dolor.</p>
+                        </div>
+                        <div class="botoes-carrinho">
+                            <button>+</button>
+                            <button>-</button>
+                        </div>
+                        <h5>R$0.00</h5>
+                        <i class="fa-solid fa-trash"></i>
+
+                    </div>
+                    <div class="item-carrinho">
+                        <img src="./images/impressora.png" alt="" />
+                        <div>
+                            <h5>hing-light</h5>
+                            <p>Lorem, ipsum dolor.</p>
+                        </div>
+                        <div class="botoes-carrinho">
+                            <button>+</button>
+                            <button>-</button>
+                        </div>
+                        <h5>R$0.00</h5>
+                        <i class="fa-solid fa-trash"></i>
+
+                    </div>
+                    
+
+                    
+                    <div class="total-modal-carrinho">
+                        <h4>Total <span>R$ 100.00</span></h4>
+                        <button class="btn-vermelho">Continuar compra</button>
+                        <button>Continuar comprando</button>
+                    </div>
+
+                </div> -->
             </nav>
 
             <section class="hero">
@@ -281,7 +382,7 @@
                         </div>
                     </div>
                 </section>
-
+                <!-- ofertas -->
                 <section class="ofertas" id="ofertas">
                     <h3>Ofertas</h3>
                     <div class="itens-ofertas">
@@ -290,7 +391,10 @@
                             <h4>Descrição do produto</h4>
                             <div class="preco-carrinho">
                                 <h4 class="preco">R$0.00,00</h4>
-                                <button class="cart-button">
+                                <button
+                                    class="cart-button"
+                                    onclick="adicionarItem()"
+                                >
                                     <i
                                         class="cart fa-solid fa-cart-shopping"
                                     ></i>
@@ -308,7 +412,10 @@
                             <h4>Descrição do produto</h4>
                             <div class="preco-carrinho">
                                 <h4 class="preco">R$0.00,00</h4>
-                                <button class="cart-button">
+                                <button
+                                    class="cart-button"
+                                    onclick="adicionarItem()"
+                                >
                                     <i
                                         class="cart fa-solid fa-cart-shopping"
                                     ></i>
@@ -326,7 +433,10 @@
                             <h4>Descrição do produto</h4>
                             <div class="preco-carrinho">
                                 <h4 class="preco">R$0.00,00</h4>
-                                <button class="cart-button">
+                                <button
+                                    class="cart-button"
+                                    onclick="adicionarItem()"
+                                >
                                     <i
                                         class="cart fa-solid fa-cart-shopping"
                                     ></i>
@@ -345,7 +455,10 @@
                             <h4>Descrição do produto</h4>
                             <div class="preco-carrinho">
                                 <h4 class="preco">R$0.00,00</h4>
-                                <button class="cart-button">
+                                <button
+                                    class="cart-button"
+                                    onclick="adicionarItem()"
+                                >
                                     <i
                                         class="cart fa-solid fa-cart-shopping"
                                     ></i>
@@ -363,7 +476,10 @@
                             <h4>Descrição do produto</h4>
                             <div class="preco-carrinho">
                                 <h4 class="preco">R$0.00,00</h4>
-                                <button class="cart-button">
+                                <button
+                                    class="cart-button"
+                                    onclick="adicionarItem()"
+                                >
                                     <i
                                         class="cart fa-solid fa-cart-shopping"
                                     ></i>
@@ -381,7 +497,10 @@
                             <h4>Descrição do produto</h4>
                             <div class="preco-carrinho">
                                 <h4 class="preco">R$0.00,00</h4>
-                                <button class="cart-button">
+                                <button
+                                    class="cart-button"
+                                    onclick="adicionarItem()"
+                                >
                                     <i
                                         class="cart fa-solid fa-cart-shopping"
                                     ></i>
@@ -400,7 +519,10 @@
                             <h4>Descrição do produto</h4>
                             <div class="preco-carrinho">
                                 <h4 class="preco">R$0.00,00</h4>
-                                <button class="cart-button">
+                                <button
+                                    class="cart-button"
+                                    onclick="adicionarItem()"
+                                >
                                     <i
                                         class="cart fa-solid fa-cart-shopping"
                                     ></i>
@@ -421,7 +543,10 @@
                             <h4>Descrição do produto</h4>
                             <div class="preco-carrinho">
                                 <h4 class="preco">R$0.00,00</h4>
-                                <button class="cart-button">
+                                <button
+                                    class="cart-button"
+                                    onclick="adicionarItem()"
+                                >
                                     <i
                                         class="cart fa-solid fa-cart-shopping"
                                     ></i>
@@ -439,7 +564,10 @@
                             <h4>Descrição do produto</h4>
                             <div class="preco-carrinho">
                                 <h4 class="preco">R$0.00,00</h4>
-                                <button class="cart-button">
+                                <button
+                                    class="cart-button"
+                                    onclick="adicionarItem()"
+                                >
                                     <i
                                         class="cart fa-solid fa-cart-shopping"
                                     ></i>
@@ -457,7 +585,10 @@
                             <h4>Descrição do produto</h4>
                             <div class="preco-carrinho">
                                 <h4 class="preco">R$0.00,00</h4>
-                                <button class="cart-button">
+                                <button
+                                    class="cart-button"
+                                    onclick="adicionarItem()"
+                                >
                                     <i
                                         class="cart fa-solid fa-cart-shopping"
                                     ></i>
@@ -494,30 +625,51 @@
                                 <ul>
                                     <li><a href="#">Lorem, ipsum dolor.</a></li>
                                     <li><a href="#">Lorem, ipsum.</a></li>
-                                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                                    <li>
+                                        <a href="#">Lorem ipsum dolor sit.</a>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="baixar-app">
                                 <h4>Baixe o nosso app</h4>
-                                <div class="logo">
-                                    Tech<span>Point</span>
-                                </div>
+                                <div class="logo">Tech<span>Point</span></div>
                                 <div class="icons-baixar">
                                     <a href="#">
-                                        <i class="fa-brands fa-google-play"></i>Play store
+                                        <i class="fa-brands fa-google-play"></i
+                                        >Play store
                                     </a>
-                                    <a href="#"><i class="fa-brands fa-apple"></i>Apple store</a>
+                                    <a href="#"
+                                        ><i class="fa-brands fa-apple"></i>Apple
+                                        store</a
+                                    >
                                 </div>
                             </div>
                             <div class="card-form">
-                                <h4>Faça seu cadastro para receber as novidades</h4>
+                                <h4>
+                                    Faça seu cadastro para receber as novidades
+                                </h4>
                                 <form action="">
-                                    <input type="text" name="nome" placeholder="Digite seu nome">
-                                    <input type="text" name="email" placeholder="Digite seu email">
-                                    <input type="password" name="password" placeholder="Crie uma senha">
-                                    <input type="password" name="password" placeholder="Confirme a senha">
-                                    <button>Enviar</button>
-
+                                    <input
+                                        type="text"
+                                        name="nome"
+                                        placeholder="Digite seu nome"
+                                    />
+                                    <input
+                                        type="text"
+                                        name="email"
+                                        placeholder="Digite seu email"
+                                    />
+                                    <input
+                                        type="password"
+                                        name="password"
+                                        placeholder="Crie uma senha"
+                                    />
+                                    <input
+                                        type="password"
+                                        name="password"
+                                        placeholder="Confirme a senha"
+                                    />
+                                    <button class="btn-vermelho">Enviar</button>
                                 </form>
                             </div>
                         </div>
@@ -525,5 +677,6 @@
                 </div>
             </footer>
         </div>
+        <script src="./js/carrinho.js"></script>
     </body>
 </html>
