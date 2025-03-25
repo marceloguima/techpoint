@@ -41,35 +41,34 @@
                             class="cart fa-solid fa-cart-shopping"
                             onclick="mostraCarrinho()"
                         ></i>
-                        <p class="conta-carrinho" id="numero-carrinho"></p
+                        <p class="conta-carrinho" id="quantidade-item"></p
                     ></a>
                 </div>
-                <!-- carrinho de compras -->
+
+                <!-----------------carrinho de compras ----------------->
                 <div class="modal-carrinho">
-                    <p class="msg-carrinho-vazio">Seu carrinho está vazio</p>
-                   <!-- itens do carrinho -->
-                    <div class="item-carrinho">
-                        <img src="./images/black-light.png" alt="" />
-                        <div>
-                            <h5>hing-light</h5>
-                            <p>Lorem, ipsum dolor.</p>
-                        </div>
-                        <div class="botoes-carrinho">
-                            <button><i class="fa-solid fa-minus"></i></button>
-                            <button><i class="fa-solid fa-plus"></i></button>
-                            <p class="quantidade">1</p>
-                        </div>
-                        <h5>R$0.00</h5>
-                        <i class="fa-solid fa-trash"></i>
+                    <h2>Carrinho</h2>
+                    <!-- itens do carrinho -->
+                    <div class="novo-item">
+                        
                     </div>
-                 
-                    
+
+                    <div class="msg-carrinho-vazio">
+                        <p>Seu carrinho está vazio</p>
+                        <img src="./images/carrinho-vazio.png" alt="" />
+                    </div>
+
+<!-- ------------------------------------- -->
                     <div class="total-modal-carrinho">
-                        <h4>Total <span>R$ 100.00</span></h4>
+                        <h4>Total R$<span id="total-itens"></span></h4>
                         <button class="btn-vermelho">Continuar a compra</button>
                     </div>
-                    <button class=" btn-vermelho btn-fechar-carrinho" onclick="fecharCarrinho()">Voltar as compras</button>
-
+                    <button
+                        class="btn-vermelho btn-fechar-carrinho"
+                        onclick="fecharCarrinho()"
+                    >
+                        Voltar as compras
+                    </button>
                 </div>
             </nav>
 
@@ -80,6 +79,7 @@
                             <h2>Conecte-se</h2>
                             <a href="#ofertas" class="btn-cta">Ver Ofertas</a>
                         </div>
+
                         <div class="texto-direito">
                             <p>Os melhores acessórios tech para o seu setup.</p>
                         </div>
@@ -311,18 +311,19 @@
                         </div>
                     </div>
                 </section>
+
                 <!-- ofertas -->
                 <section class="ofertas" id="ofertas">
                     <h3>Ofertas</h3>
                     <div class="itens-ofertas">
-                        <div class="card-ofertas">
+                        <div class="card-ofertas" id="produto-01">
                             <img src="images/notibook.png" alt="" />
                             <h4>Descrição do produto</h4>
                             <div class="preco-carrinho">
                                 <h4 class="preco">R$0.00,00</h4>
                                 <button
                                     class="cart-button"
-                                    onclick="adicionarItem()"
+                                    onclick="adicionarItem('produto-01')"
                                 >
                                     <i
                                         class="cart fa-solid fa-cart-shopping"
@@ -336,14 +337,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card-ofertas">
+                        <div class="card-ofertas" id="produto-02">
                             <img src="images/fone-branco-fio.png" alt="" />
                             <h4>Descrição do produto</h4>
                             <div class="preco-carrinho">
                                 <h4 class="preco">R$0.00,00</h4>
                                 <button
                                     class="cart-button"
-                                    onclick="adicionarItem()"
+                                    onclick="adicionarItem('produto-02')"
                                 >
                                     <i
                                         class="cart fa-solid fa-cart-shopping"
@@ -357,14 +358,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card-ofertas">
+                        <div class="card-ofertas" id="produto-03">
                             <img src="images/impressora.png" alt="" />
                             <h4>Descrição do produto</h4>
                             <div class="preco-carrinho">
                                 <h4 class="preco">R$0.00,00</h4>
                                 <button
                                     class="cart-button"
-                                    onclick="adicionarItem()"
+                                    onclick="adicionarItem('produto-03')"
                                 >
                                     <i
                                         class="cart fa-solid fa-cart-shopping"
@@ -379,56 +380,14 @@
                             </div>
                         </div>
 
-                        <div class="card-ofertas">
+                        <div class="card-ofertas" id="produto-04">
                             <img src="images/caixas.png" alt="" />
                             <h4>Descrição do produto</h4>
                             <div class="preco-carrinho">
                                 <h4 class="preco">R$0.00,00</h4>
                                 <button
                                     class="cart-button"
-                                    onclick="adicionarItem()"
-                                >
-                                    <i
-                                        class="cart fa-solid fa-cart-shopping"
-                                    ></i>
-                                </button>
-                            </div>
-                            <div class="aval">
-                                <div class="itens-aval">
-                                    <i class="fa-solid fa-star"></i>
-                                    <p>4.9</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-ofertas">
-                            <img src="images/teclado2.png" alt="" />
-                            <h4>Descrição do produto</h4>
-                            <div class="preco-carrinho">
-                                <h4 class="preco">R$0.00,00</h4>
-                                <button
-                                    class="cart-button"
-                                    onclick="adicionarItem()"
-                                >
-                                    <i
-                                        class="cart fa-solid fa-cart-shopping"
-                                    ></i>
-                                </button>
-                            </div>
-                            <div class="aval">
-                                <div class="itens-aval">
-                                    <i class="fa-solid fa-star"></i>
-                                    <p>4.9</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-ofertas">
-                            <img src="images/fone-preto.png" alt="" />
-                            <h4>Descrição do produto</h4>
-                            <div class="preco-carrinho">
-                                <h4 class="preco">R$0.00,00</h4>
-                                <button
-                                    class="cart-button"
-                                    onclick="adicionarItem()"
+                                    onclick="adicionarItem('produto-04')"
                                 >
                                     <i
                                         class="cart fa-solid fa-cart-shopping"
@@ -443,14 +402,14 @@
                             </div>
                         </div>
 
-                        <div class="card-ofertas">
-                            <img src="images/mic1.png" alt="" />
+                        <div class="card-ofertas" id="produto-05">
+                            <img src="images/teclado2.png" alt="" />
                             <h4>Descrição do produto</h4>
                             <div class="preco-carrinho">
                                 <h4 class="preco">R$0.00,00</h4>
                                 <button
                                     class="cart-button"
-                                    onclick="adicionarItem()"
+                                    onclick="adicionarItem('produto-05')"
                                 >
                                     <i
                                         class="cart fa-solid fa-cart-shopping"
@@ -464,7 +423,50 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card-ofertas">
+                        <div class="card-ofertas" id="produto-06">
+                            <img src="images/fone-preto.png" alt="" />
+                            <h4>Descrição do produto</h4>
+                            <div class="preco-carrinho">
+                                <h4 class="preco">R$0.00,00</h4>
+                                <button
+                                    class="cart-button"
+                                    onclick="adicionarItem('produto-06')"
+                                >
+                                    <i
+                                        class="cart fa-solid fa-cart-shopping"
+                                    ></i>
+                                </button>
+                            </div>
+                            <div class="aval">
+                                <div class="itens-aval">
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>4.9</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-ofertas" id="produto-07">
+                            <img src="images/mic1.png" alt="" />
+                            <h4>Descrição do produto</h4>
+                            <div class="preco-carrinho">
+                                <h4 class="preco">R$0.00,00</h4>
+                                <button
+                                    class="cart-button"
+                                    onclick="adicionarItem('produto-07')"
+                                >
+                                    <i
+                                        class="cart fa-solid fa-cart-shopping"
+                                    ></i>
+                                </button>
+                            </div>
+                            <div class="aval">
+                                <div class="itens-aval">
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>4.9</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-ofertas" id="produto-08">
                             <img
                                 src="images/fone-branco-fundo-rosa.jpg"
                                 alt=""
@@ -474,7 +476,7 @@
                                 <h4 class="preco">R$0.00,00</h4>
                                 <button
                                     class="cart-button"
-                                    onclick="adicionarItem()"
+                                    onclick="adicionarItem('produto-08')"
                                 >
                                     <i
                                         class="cart fa-solid fa-cart-shopping"
@@ -488,14 +490,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card-ofertas">
+                        <div class="card-ofertas" id="produto-09">
                             <img src="images/notibook.png" alt="" />
                             <h4>Descrição do produto</h4>
                             <div class="preco-carrinho">
                                 <h4 class="preco">R$0.00,00</h4>
                                 <button
                                     class="cart-button"
-                                    onclick="adicionarItem()"
+                                    onclick="adicionarItem('produto-09')"
                                 >
                                     <i
                                         class="cart fa-solid fa-cart-shopping"
@@ -509,14 +511,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card-ofertas">
+                        <div class="card-ofertas" id="produto-10">
                             <img src="images/mic2 (2).png" alt="" />
                             <h4>Descrição do produto</h4>
                             <div class="preco-carrinho">
                                 <h4 class="preco">R$0.00,00</h4>
                                 <button
                                     class="cart-button"
-                                    onclick="adicionarItem()"
+                                    onclick="adicionarItem('produto-10')"
                                 >
                                     <i
                                         class="cart fa-solid fa-cart-shopping"
