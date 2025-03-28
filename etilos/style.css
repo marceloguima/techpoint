@@ -534,8 +534,8 @@ h3 {
 .cart-button {
     font-size: 2rem;
     width: 50px;
-    border-radius: var(--border-radius-medium);
-    background: none;
+    background: transparent;
+    border: none;
     cursor: pointer;
 }
 
@@ -550,10 +550,12 @@ h3 {
 
 .itens-aval {
     display: flex;
-    gap: 10px;
+    /* gap: 10px; */
     border: solid 1px var(--color-accent);
-    width: 90px;
+    width: 100%;
     font-size: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
     padding: var(--border-radius-small);
     border-radius: var(--border-radius-small);
 }
@@ -566,6 +568,7 @@ h3 {
 /* estrela */
 .itens-aval i {
     color: #f78d04;
+    font-size: 1rem;
 }
 
 footer {

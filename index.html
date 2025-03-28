@@ -49,16 +49,14 @@
                 <div class="modal-carrinho">
                     <h2>Carrinho</h2>
                     <!-- itens do carrinho -->
-                    <div class="novo-item">
-                        
-                    </div>
+                    <div class="novo-item"></div>
 
                     <div class="msg-carrinho-vazio">
                         <p>Seu carrinho está vazio</p>
                         <img src="./images/carrinho-vazio.png" alt="" />
                     </div>
 
-<!-- ------------------------------------- -->
+                    <!-- ------------------------------------- -->
                     <div class="total-modal-carrinho">
                         <h4>Total R$<span id="total-itens"></span></h4>
                         <button class="btn-vermelho">Continuar a compra</button>
@@ -317,8 +315,238 @@
                     <h3>Ofertas</h3>
                     <div class="itens-ofertas">
                         <div class="card-ofertas" id="produto-01">
+                            <img src="images/notibook.png" alt="Notebook Lenovo" />
+                            <h4>Notebook Lenovo Ideapad</h4>
+                            <p>Intel Core i5, 8GB RAM, 256GB SSD.</p>
+                            <div class="preco-carrinho">
+                                <h4 class="preco">R$3.299,90</h4>
+                                <button class="cart-button" onclick="adicionarItem('produto-01')">
+                                    <i class="cart fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                            <div class="aval">
+                                <div class="itens-aval">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <p>4.5</p>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="card-ofertas" id="produto-02">
+                            <img src="images/fone-branco-fio.png" alt="Fone de ouvido JBL" />
+                            <h4>Fone JBL Tune 110</h4>
+                            <p>Fone com fio, graves profundos.</p>
+                            <div class="preco-carrinho">
+                                <h4 class="preco">R$89,90</h4>
+                                <button class="cart-button" onclick="adicionarItem('produto-02')">
+                                    <i class="cart fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                            <div class="aval">
+                                <div class="itens-aval">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>4.0</p>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="card-ofertas" id="produto-03">
+                            <img src="images/impressora (2).png" alt="Impressora HP" />
+                            <h4>Impressora HP LaserJet Pro</h4>
+                            <p>Impressão rápida e eficiente.</p>
+                            <div class="preco-carrinho">
+                                <h4 class="preco">R$2.500,00</h4>
+                                <button class="cart-button" onclick="adicionarItem('produto-03')">
+                                    <i class="cart fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                            <div class="aval">
+                                <div class="itens-aval">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <p>4.5</p>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="card-ofertas" id="produto-04">
+                            <img src="images/caixas.png" alt="Caixa de Som JBL" />
+                            <h4>Caixa JBL Flip 6</h4>
+                            <p>Bluetooth, som potente, à prova d'água.</p>
+                            <div class="preco-carrinho">
+                                <h4 class="preco">R$79,90</h4>
+                                <button class="cart-button" onclick="adicionarItem('produto-04')">
+                                    <i class="cart fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                            <div class="aval">
+                                <div class="itens-aval">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>4.0</p>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="card-ofertas" id="produto-05">
+                            <img src="images/teclado2.png" alt="Teclado Logitech" />
+                            <h4>Teclado Logitech G PRO</h4>
+                            <p>Mecânico, switches GX Blue, RGB.</p>
+                            <div class="preco-carrinho">
+                                <h4 class="preco">R$56,80</h4>
+                                <button class="cart-button" onclick="adicionarItem('produto-05')">
+                                    <i class="cart fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                            <div class="aval">
+                                <div class="itens-aval">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <p>4.5</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-ofertas" id="produto-06">
+                            <img src="images/fone-preto.png" alt="Fone de ouvido preto" />
+                            <h4>Fone de ouvido Bluetooth X</h4>
+                            <p>Fone sem fio, alta qualidade de som.</p>
+                            <div class="preco-carrinho">
+                                <h4 class="preco">R$149,90</h4>
+                                <button class="cart-button" onclick="adicionarItem('produto-06')">
+                                    <i class="cart fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                            <div class="aval">
+                                <div class="itens-aval">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <p>4.6</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-ofertas" id="produto-07">
+                            <img src="images/mic1.png" alt="Microfone Condensador" />
+                            <h4>Microfone Condensador Profissional</h4>
+                            <p>Ideal para gravações e podcasts.</p>
+                            <div class="preco-carrinho">
+                                <h4 class="preco">R$299,90</h4>
+                                <button class="cart-button" onclick="adicionarItem('produto-07')">
+                                    <i class="cart fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                            <div class="aval">
+                                <div class="itens-aval">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <p>4.5</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-ofertas" id="produto-08">
+                            <img src="images/fone-branco-fundo-rosa.jpg" alt="Fone de ouvido rosa" />
+                            <h4>Fone de ouvido Bluetooth Y</h4>
+                            <p>Design moderno, bateria de longa duração.</p>
+                            <div class="preco-carrinho">
+                                <h4 class="preco">R$129,90</h4>
+                                <button class="cart-button" onclick="adicionarItem('produto-08')">
+                                    <i class="cart fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                            <div class="aval">
+                                <div class="itens-aval">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>4.0</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-ofertas" id="produto-09">
+                            <img src="images/notibook.png" alt="Notebook Samsung" />
+                            <h4>Notebook Samsung Ultra Leve</h4>
+                            <p>Tela Full HD, 512GB SSD, 16GB RAM.</p>
+                            <div class="preco-carrinho">
+                                <h4 class="preco">R$3.599,90</h4>
+                                <button class="cart-button" onclick="adicionarItem('produto-09')">
+                                    <i class="cart fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                            <div class="aval">
+                                <div class="itens-aval">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>5.0</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-ofertas" id="produto-10">
+                            <img src="images/mic2 (2).png" alt="Microfone USB" />
+                            <h4>Microfone USB para PC</h4>
+                            <p>Fácil de usar, compatível com diversos softwares.</p>
+                            <div class="preco-carrinho">
+                                <h4 class="preco">R$99,90</h4>
+                                <button class="cart-button" onclick="adicionarItem('produto-10')">
+                                    <i class="cart fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                            <div class="aval">
+                                <div class="itens-aval">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <p>4.5</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+
+                    
+                </section>
+                
+
+                
+
+                <!-- <section class="ofertas" id="ofertas">
+                    <h3>Ofertas</h3>
+                    <div class="itens-ofertas">
+                        <div class="card-ofertas" id="produto-01">
                             <img src="images/notibook.png" alt="" />
-                            <h4>Descrição do produto</h4>
+                            <h4>Notibook lenovo</h4>
+                            <p>Notibook lenovo intel 128gb de armazenamento </p>
                             <div class="preco-carrinho">
                                 <h4 class="preco">R$0.00,00</h4>
                                 <button
@@ -333,15 +561,19 @@
                             <div class="aval">
                                 <div class="itens-aval">
                                     <i class="fa-solid fa-star"></i>
-                                    <p>4.9</p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <p>4.5</p>
                                 </div>
                             </div>
                         </div>
                         <div class="card-ofertas" id="produto-02">
                             <img src="images/fone-branco-fio.png" alt="" />
-                            <h4>Descrição do produto</h4>
+                            <h4>Fone de ouvido</h4>
                             <div class="preco-carrinho">
-                                <h4 class="preco">R$0.00,00</h4>
+                                <h4 class="preco">R$89,90</h4>
                                 <button
                                     class="cart-button"
                                     onclick="adicionarItem('produto-02')"
@@ -354,15 +586,19 @@
                             <div class="aval">
                                 <div class="itens-aval">
                                     <i class="fa-solid fa-star"></i>
-                                    <p>4.9</p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+
+                                    <p>4.0</p>
                                 </div>
                             </div>
                         </div>
                         <div class="card-ofertas" id="produto-03">
-                            <img src="images/impressora.png" alt="" />
-                            <h4>Descrição do produto</h4>
+                            <img src="images/impressora(2).png" alt="" />
+                            <h4>Impressora </h4>
                             <div class="preco-carrinho">
-                                <h4 class="preco">R$0.00,00</h4>
+                                <h4 class="preco">R$2.500,00</h4>
                                 <button
                                     class="cart-button"
                                     onclick="adicionarItem('produto-03')"
@@ -375,16 +611,22 @@
                             <div class="aval">
                                 <div class="itens-aval">
                                     <i class="fa-solid fa-star"></i>
-                                    <p>4.9</p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+
+
+                                    <p>4.5</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="card-ofertas" id="produto-04">
                             <img src="images/caixas.png" alt="" />
-                            <h4>Descrição do produto</h4>
+                            <h4>Caixa de som</h4>
                             <div class="preco-carrinho">
-                                <h4 class="preco">R$0.00,00</h4>
+                                <h4 class="preco">R$79,90</h4>
                                 <button
                                     class="cart-button"
                                     onclick="adicionarItem('produto-04')"
@@ -397,16 +639,20 @@
                             <div class="aval">
                                 <div class="itens-aval">
                                     <i class="fa-solid fa-star"></i>
-                                    <p>4.9</p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+
+                                    <p>4.0</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="card-ofertas" id="produto-05">
                             <img src="images/teclado2.png" alt="" />
-                            <h4>Descrição do produto</h4>
+                            <h4>Teclado</h4>
                             <div class="preco-carrinho">
-                                <h4 class="preco">R$0.00,00</h4>
+                                <h4 class="preco">R$56,80</h4>
                                 <button
                                     class="cart-button"
                                     onclick="adicionarItem('produto-05')"
@@ -419,7 +665,11 @@
                             <div class="aval">
                                 <div class="itens-aval">
                                     <i class="fa-solid fa-star"></i>
-                                    <p>4.9</p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+
+                                    <p>4.0</p>
                                 </div>
                             </div>
                         </div>
@@ -447,7 +697,7 @@
 
                         <div class="card-ofertas" id="produto-07">
                             <img src="images/mic1.png" alt="" />
-                            <h4>Descrição do produto</h4>
+                            <h4>Microfone</h4>
                             <div class="preco-carrinho">
                                 <h4 class="preco">R$0.00,00</h4>
                                 <button
@@ -462,7 +712,12 @@
                             <div class="aval">
                                 <div class="itens-aval">
                                     <i class="fa-solid fa-star"></i>
-                                    <p>4.9</p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+
+                                    <p>4.5</p>
                                 </div>
                             </div>
                         </div>
@@ -492,9 +747,9 @@
                         </div>
                         <div class="card-ofertas" id="produto-09">
                             <img src="images/notibook.png" alt="" />
-                            <h4>Descrição do produto</h4>
+                            <h4>Notibook Sansung</h4>
                             <div class="preco-carrinho">
-                                <h4 class="preco">R$0.00,00</h4>
+                                <h4 class="preco">R$3.599,90</h4>
                                 <button
                                     class="cart-button"
                                     onclick="adicionarItem('produto-09')"
@@ -507,13 +762,18 @@
                             <div class="aval">
                                 <div class="itens-aval">
                                     <i class="fa-solid fa-star"></i>
-                                    <p>4.9</p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+
+                                    <p>5.0</p>
                                 </div>
                             </div>
                         </div>
                         <div class="card-ofertas" id="produto-10">
                             <img src="images/mic2 (2).png" alt="" />
-                            <h4>Descrição do produto</h4>
+                            <h4>Microfone</h4>
                             <div class="preco-carrinho">
                                 <h4 class="preco">R$0.00,00</h4>
                                 <button
@@ -528,12 +788,18 @@
                             <div class="aval">
                                 <div class="itens-aval">
                                     <i class="fa-solid fa-star"></i>
-                                    <p>4.9</p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+
+
+                                    <p>4.5</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> -->
             </main>
 
             <footer>

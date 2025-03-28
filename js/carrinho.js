@@ -4,79 +4,81 @@ let itemAdicionado = document.querySelector(".novo-item");
 let valorTotal = 0
 
 quantidade.innerHTML = 0;
-// meus produtos
+
 const produtos = [
     {
         id: "produto-01",
-        nome: "Notebook Lenovo",
-        preco: 2580.0,
-        descricao: "Notebook Lenovo com 128GB de armazenamento.",
+        nome: "Notebook Lenovo Ideapad",
+        preco: 3299.90,
+        descricao: "Intel Core i5, 8GB RAM, 256GB SSD.",
         imagem: "images/notibook.png",
     },
     {
         id: "produto-02",
-        nome: "Fone de Ouvido Branco",
-        preco: 49.99,
-        descricao: "Fone de ouvido com fio, ideal para uso diário.",
+        nome: "Fone JBL Tune 110",
+        preco: 89.90,
+        descricao: "Fone com fio, graves profundos.",
         imagem: "images/fone-branco-fio.png",
     },
     {
         id: "produto-03",
-        nome: "Impressora Multifuncional",
-        preco: 799.0,
-        descricao: "Impressora multifuncional com Wi-Fi e scanner.",
+        nome: "Impressora HP LaserJet Pro",
+        preco: 2500.00,
+        descricao: "Impressão rápida e eficiente.",
         imagem: "images/impressora.png",
     },
     {
         id: "produto-04",
-        nome: "Caixas de Som",
-        preco: 199.5,
-        descricao: "Conjunto de caixas de som para PC ou notebook.",
+        nome: "Caixa JBL Flip 6",
+        preco: 79.90,
+        descricao: "Bluetooth, som potente, à prova d'água.",
         imagem: "images/caixas.png",
     },
     {
         id: "produto-05",
-        nome: "Teclado Mecânico",
-        preco: 349.9,
-        descricao: "Teclado mecânico com switches de alta durabilidade.",
+        nome: "Teclado Logitech G PRO",
+        preco: 56.80,
+        descricao: "Mecânico, switches GX Blue, RGB.",
         imagem: "images/teclado2.png",
     },
     {
         id: "produto-06",
-        nome: "Fone de Ouvido Preto",
-        preco: 59.99,
-        descricao: "Fone de ouvido intra-auricular com microfone.",
+        nome: "Fone de ouvido Bluetooth X",
+        preco: 149.90,
+        descricao: "Fone sem fio, alta qualidade de som.",
         imagem: "images/fone-preto.png",
     },
     {
         id: "produto-07",
-        nome: "Microfone Condensador",
-        preco: 279.0,
-        descricao: "Microfone condensador para gravações de alta qualidade.",
+        nome: "Microfone Condensador Profissional",
+        preco: 299.90,
+        descricao: "Ideal para gravações e podcasts.",
         imagem: "images/mic1.png",
     },
     {
         id: "produto-08",
-        nome: "Fone Branco Rosa",
-        preco: 69.99,
-        descricao: "Fone de ouvido moderno com design diferenciado.",
+        nome: "Fone de ouvido Bluetooth Y",
+        preco: 129.90,
+        descricao: "Design moderno, bateria de longa duração.",
         imagem: "images/fone-branco-fundo-rosa.jpg",
     },
     {
         id: "produto-09",
-        nome: "Notebook Ultrafino",
-        preco: 2899.0,
-        descricao: "Notebook ultrafino com tela de alta resolução.",
+        nome: "Notebook Samsung Ultra Leve",
+        preco: 3599.90,
+        descricao: "Tela Full HD, 512GB SSD, 16GB RAM.",
         imagem: "images/notibook.png",
     },
     {
         id: "produto-10",
-        nome: "Microfone de Lapela",
-        preco: 129.5,
-        descricao: "Microfone de lapela para apresentações e entrevistas.",
+        nome: "Microfone USB para PC",
+        preco: 129.50,
+        descricao: "Fácil de usar, com conexão USB.",
         imagem: "images/mic2 (2).png",
     },
 ];
+
+
 
 function mostraCarrinho() {
     modalCarrinho.style.display = "block";
