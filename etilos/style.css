@@ -26,9 +26,13 @@
     --font-size-xl: 2rem;
 
     /* Espaçamento */
+
+    /* gaps */
     --gap-small: 20px;
     --gap-medium: 20px;
     --gap-large: 80px;
+
+    /* paddings */
     --padding-small: 4px;
     --padding-medium: 10px;
     --padding-large: 20px;
@@ -63,7 +67,7 @@
     background-color: var(--color-primary);
     height: var(--navbar-height);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 0 var(--padding-xl);
     position: fixed;
@@ -81,7 +85,6 @@
 
 .content-main-nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 80%;
     height: 100%;
@@ -134,6 +137,22 @@
     justify-content: space-between;
 }
 
+.links-nav-menu{
+    background: #c0a9a9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 300px;
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    gap: 20px;
+    display: none;
+    /* z-index: 1000; */
+}
+
 .links-nav,
 a {
     list-style: none;
@@ -159,6 +178,18 @@ a:hover {
 
 .nav-icons a {
     font-size: var(--font-size-xl);
+}
+
+.btn-menu, .fechar-menu{
+   
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: var(--color-secondary);
+}
+
+.fechar-menu{
+    display: none;
 }
 
 .contando {
@@ -674,6 +705,10 @@ form input:focus{
     .content-buscar {
         width: 40vw;
     }
+
+    .btn-menu{
+        display: none;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -687,29 +722,35 @@ form input:focus{
 }
 @media (max-width: 996px) {
     .content-main-nav {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: var(--gap-small);
-        margin-top: 40px;
-        margin-top: 0;
+       
+        width: 70%;
+       
+      
     }
     .content-buscar {
         width: 50%;
+       
+        
+    }
+
+    .nav-icons {
+        width: 30%;
+     
     }
 
     .navbar {
         gap: var(--gap-small);
-        height: 150px;
+      
     }
 
     .logo {
-        width: 15%;
+        width: 25%;
     }
 
     .links-nav {
         justify-content: space-around;
         width: 100%;
+        display: none;
     }
 
     .links-nav a {
@@ -746,12 +787,16 @@ form input:focus{
 
 @media (max-width: 768px) {
     .navbar {
-        justify-content: space-around;
-        gap: var(--gap-small);
+        padding: var(--gap-small);
+        height: 150px;
     }
 
+    .content-main-nav{
+       flex-direction: column;
+
+    }
     .nav-icons {
-        width: 15%;
+        width: 25%;
     }
 
     a i {
@@ -760,6 +805,7 @@ form input:focus{
 
     .content-buscar {
         width: 60vw;
+       
     }
 
     .texto-esquerdo a {
@@ -773,27 +819,28 @@ form input:focus{
 
 @media (max-width: 480px) {
     .content-main-nav {
-        flex-direction: column;
         justify-content: space-between;
         align-items: center;
         width: 80%;
         height: 100%;
     }
-
+/* 
     .links-nav {
         width: 100%;
         justify-content: space-between;
         font-size: var(--font-size-small);
-    }
+    } */
 
     .navbar {
         align-items: start;
-        padding: 0 20px;
+        padding: 0 ;
         gap: 0;
+        flex-direction: column;
+        align-items: center;
     }
 
     .nav-icons {
-        gap: 10px;
+       
     }
 
     .texto-hero {

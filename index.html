@@ -32,9 +32,17 @@
                         <li><a href="#novidades">Novidades</a></li>
                         <li><a href="#destaques">Mais vendidos</a></li>
                     </ul>
+
+                    <ul class="links-nav-menu">
+                        <li><a href="">Home</a></li>
+                        <li><a href="#novidades">Novidades</a></li>
+                        <li><a href="#destaques">Mais vendidos</a></li>
+                    </ul>
                 </div>
 
                 <div class="nav-icons">
+                    <button class="fechar-menu" onclick="fechaMenu()"><i class="fa-solid fa-x"></i></button>
+                    <button class="btn-menu" onclick="mostrarMenu()"><i class="fa-solid fa-bars"></i></button>
                     <a href="#"><i class="fa-solid fa-user"></i></a>
                     <a href="#" class="contando"
                         ><i
@@ -537,269 +545,6 @@
                     
                 </section>
                 
-
-                
-
-                <!-- <section class="ofertas" id="ofertas">
-                    <h3>Ofertas</h3>
-                    <div class="itens-ofertas">
-                        <div class="card-ofertas" id="produto-01">
-                            <img src="images/notibook.png" alt="" />
-                            <h4>Notibook lenovo</h4>
-                            <p>Notibook lenovo intel 128gb de armazenamento </p>
-                            <div class="preco-carrinho">
-                                <h4 class="preco">R$0.00,00</h4>
-                                <button
-                                    class="cart-button"
-                                    onclick="adicionarItem('produto-01')"
-                                >
-                                    <i
-                                        class="cart fa-solid fa-cart-shopping"
-                                    ></i>
-                                </button>
-                            </div>
-                            <div class="aval">
-                                <div class="itens-aval">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star-half-stroke"></i>
-                                    <p>4.5</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-ofertas" id="produto-02">
-                            <img src="images/fone-branco-fio.png" alt="" />
-                            <h4>Fone de ouvido</h4>
-                            <div class="preco-carrinho">
-                                <h4 class="preco">R$89,90</h4>
-                                <button
-                                    class="cart-button"
-                                    onclick="adicionarItem('produto-02')"
-                                >
-                                    <i
-                                        class="cart fa-solid fa-cart-shopping"
-                                    ></i>
-                                </button>
-                            </div>
-                            <div class="aval">
-                                <div class="itens-aval">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-
-                                    <p>4.0</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-ofertas" id="produto-03">
-                            <img src="images/impressora(2).png" alt="" />
-                            <h4>Impressora </h4>
-                            <div class="preco-carrinho">
-                                <h4 class="preco">R$2.500,00</h4>
-                                <button
-                                    class="cart-button"
-                                    onclick="adicionarItem('produto-03')"
-                                >
-                                    <i
-                                        class="cart fa-solid fa-cart-shopping"
-                                    ></i>
-                                </button>
-                            </div>
-                            <div class="aval">
-                                <div class="itens-aval">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star-half-stroke"></i>
-
-
-                                    <p>4.5</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card-ofertas" id="produto-04">
-                            <img src="images/caixas.png" alt="" />
-                            <h4>Caixa de som</h4>
-                            <div class="preco-carrinho">
-                                <h4 class="preco">R$79,90</h4>
-                                <button
-                                    class="cart-button"
-                                    onclick="adicionarItem('produto-04')"
-                                >
-                                    <i
-                                        class="cart fa-solid fa-cart-shopping"
-                                    ></i>
-                                </button>
-                            </div>
-                            <div class="aval">
-                                <div class="itens-aval">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-
-                                    <p>4.0</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card-ofertas" id="produto-05">
-                            <img src="images/teclado2.png" alt="" />
-                            <h4>Teclado</h4>
-                            <div class="preco-carrinho">
-                                <h4 class="preco">R$56,80</h4>
-                                <button
-                                    class="cart-button"
-                                    onclick="adicionarItem('produto-05')"
-                                >
-                                    <i
-                                        class="cart fa-solid fa-cart-shopping"
-                                    ></i>
-                                </button>
-                            </div>
-                            <div class="aval">
-                                <div class="itens-aval">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-
-                                    <p>4.0</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-ofertas" id="produto-06">
-                            <img src="images/fone-preto.png" alt="" />
-                            <h4>Descrição do produto</h4>
-                            <div class="preco-carrinho">
-                                <h4 class="preco">R$0.00,00</h4>
-                                <button
-                                    class="cart-button"
-                                    onclick="adicionarItem('produto-06')"
-                                >
-                                    <i
-                                        class="cart fa-solid fa-cart-shopping"
-                                    ></i>
-                                </button>
-                            </div>
-                            <div class="aval">
-                                <div class="itens-aval">
-                                    <i class="fa-solid fa-star"></i>
-                                    <p>4.9</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card-ofertas" id="produto-07">
-                            <img src="images/mic1.png" alt="" />
-                            <h4>Microfone</h4>
-                            <div class="preco-carrinho">
-                                <h4 class="preco">R$0.00,00</h4>
-                                <button
-                                    class="cart-button"
-                                    onclick="adicionarItem('produto-07')"
-                                >
-                                    <i
-                                        class="cart fa-solid fa-cart-shopping"
-                                    ></i>
-                                </button>
-                            </div>
-                            <div class="aval">
-                                <div class="itens-aval">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star-half-stroke"></i>
-
-                                    <p>4.5</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-ofertas" id="produto-08">
-                            <img
-                                src="images/fone-branco-fundo-rosa.jpg"
-                                alt=""
-                            />
-                            <h4>Descrição do produto</h4>
-                            <div class="preco-carrinho">
-                                <h4 class="preco">R$0.00,00</h4>
-                                <button
-                                    class="cart-button"
-                                    onclick="adicionarItem('produto-08')"
-                                >
-                                    <i
-                                        class="cart fa-solid fa-cart-shopping"
-                                    ></i>
-                                </button>
-                            </div>
-                            <div class="aval">
-                                <div class="itens-aval">
-                                    <i class="fa-solid fa-star"></i>
-                                    <p>4.9</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-ofertas" id="produto-09">
-                            <img src="images/notibook.png" alt="" />
-                            <h4>Notibook Sansung</h4>
-                            <div class="preco-carrinho">
-                                <h4 class="preco">R$3.599,90</h4>
-                                <button
-                                    class="cart-button"
-                                    onclick="adicionarItem('produto-09')"
-                                >
-                                    <i
-                                        class="cart fa-solid fa-cart-shopping"
-                                    ></i>
-                                </button>
-                            </div>
-                            <div class="aval">
-                                <div class="itens-aval">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-
-                                    <p>5.0</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-ofertas" id="produto-10">
-                            <img src="images/mic2 (2).png" alt="" />
-                            <h4>Microfone</h4>
-                            <div class="preco-carrinho">
-                                <h4 class="preco">R$0.00,00</h4>
-                                <button
-                                    class="cart-button"
-                                    onclick="adicionarItem('produto-10')"
-                                >
-                                    <i
-                                        class="cart fa-solid fa-cart-shopping"
-                                    ></i>
-                                </button>
-                            </div>
-                            <div class="aval">
-                                <div class="itens-aval">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star-half-stroke"></i>
-
-
-                                    <p>4.5</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section> -->
             </main>
 
             <footer>
@@ -875,5 +620,6 @@
             </footer>
         </div>
         <script src="./js/carrinho.js"></script>
+        <script src="./js/menu.js"></script>
     </body>
 </html>
