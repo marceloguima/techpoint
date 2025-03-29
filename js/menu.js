@@ -24,22 +24,3 @@ function fechaMenu() {
 
 
 
-
-// const menu = document.querySelector(".menu-hamburger");
-// const botaoAbrirMenu = document.querySelector(".btn-menu");
-// const botaoFecharMenu = document.querySelector(".fechar-menu");
-// const navTelasGrandes = document.querySelector(".nav-telas-g");
-
-// function mostraMenu() {
-//     if (menu.style.display === "block") {
-//         fechaMenu();
-//     } else {
-//         menu.style.display = "block";
- 
-
-//     }
-// }
-
-// function fechaMenu() {
-//     menu.style.display = "none";
-// }
